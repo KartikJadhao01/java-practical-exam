@@ -1,0 +1,25 @@
+1. Second Large Element in an array.
+=> public class SecondLarge{
+          public static void main(String args[]){
+                 int[] arr = {10,20,30,40};
+                 
+                 int max = 0;
+                 
+                 for(int i = 0; i < arr.length; i++){
+                      if(arr[i] > max){
+                         max = arr[i];
+                      }
+                 }
+
+                 int secondMax = 0;
+
+                 for(int i = 0; i < arr.length; i++){
+                      if(arr[i] > secondMax && max != arr[i]){
+                          secondMax = arr[i];
+                       }
+                 }
+
+                 System.out.print("Second Largest Element is: " + secondMax);
+             
+           }
+   }

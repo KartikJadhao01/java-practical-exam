@@ -1,0 +1,17 @@
+3. Remove Duplicate Element From an Array.
+=>
+public class RemoveDupli {
+public static void main(String[] args) {
+	int arr[] = {10,10,22,52,22,60};
+	int del[] = new int[arr.length];
+	
+	for(int i = 0; i < arr.length; i++) {
+		for(int j = i+1; j < arr.length; j++) {
+			if(arr[i] == arr[j]) {
+				del[i] = arr[i];
+			}
+		}
+		System.out.println(del[i]);
+	}
+}
+}
